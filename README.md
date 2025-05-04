@@ -36,7 +36,7 @@ API: REST Countries API v3
 Deployment: (Netlify)
 
 🌐 Live Demo
-Experience the app instantly: Countries Explorer Live Demo
+(https://countries-api-make.netlify.app/)
 
 🔹 What to explore:
 
