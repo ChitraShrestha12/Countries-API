@@ -23,9 +23,24 @@
     </header>
 
     <main>
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search for a country...">
+      <div class="search-filter-container">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search for a country...">
+        </div>
+
+        <div class="dropdown-filter">
+          <select class="region-select">
+            <option hidden>Select a region</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="north-america">North America</option>
+            <option value="oceania">Oceania</option>
+            <option value="south-america">South America</option>
+            <option value="antarctica">Antarctica</option>
+          </select>
+        </div>
       </div>
     </main>
   </body>
