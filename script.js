@@ -6,9 +6,9 @@ const toggleTheme = document.querySelector(".toggle-theme");
 let allCountries = [];
 toggleTheme.addEventListener("click", () => {
   const isDark = document.body.classList.toggle("dark");
-  toggleTheme.innerHTML = !isDark
-    ? '<i class="fa-regular fa-moon"></i>&nbsp; Dark Mode'
-    : '<i class="fa-regular fa-sun"></i>&nbsp; Light Mode';
+  const icon = isDark ? "fa-sun" : "fa-moon";
+  const text = isDark ? "Light Mode" : "Dark Mode";
+  toggleTheme.innerHTML=`<i class="fa-regular ${icon}"></i>&nbsp; ${text}`
 });
 
 fetch(
@@ -17,7 +17,7 @@ fetch(
   .then((res) => res.json())
   .then((countryData) => {
     console.log(countryData);
-    
+
     allCountries = countryData;
     displayCountries(countryData);
   });
