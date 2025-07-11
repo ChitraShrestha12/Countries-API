@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Country Detail</title>
-    <link rel="stylesheet" href="country.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="country.css" />
     <script src="script.js" defer></script>
     <script src="country.js" defer></script>
     <link
@@ -15,13 +14,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 class="logo">Where in the world?</h1>
-        <div class="toggle-theme">
-          <i class="fa-regular fa-moon"></i>&nbsp; Dark Mode
+      <h1 class="logo">Where in the world?</h1>
+      <div class="toggle-theme">
+        <i class="fa-regular fa-moon"></i>&nbsp; Dark Mode
+      </div>
+    </header>
+
+    <main class="country-detail">
+        <div class="img-section-detail">
+            <img src="https://flagcdn.com/w320/ax.png" alt="">
         </div>
-      </header>
-</body>
+
+        <div class="country-detail-info">
+          <h1 class="country-detail-title">Åland Islands</h1>
+            <p class="native-name"><span>Native Name: </span> Åland</p>
+            <p class="population"><span>Population: </span>23822042</p>
+            <p class="region"><span>Region: </span>Americans</p>
+            <p class="sub-region"><span>Sub-Region: </span>South America</p>
+        </div>
+        <div class="extra-detail">
+          <p class="capital"><span>Capital: </span>Brasila</p>
+            <p class="top-level-domain"><span>Top Level Domain: </span>.br</p>
+            <p class="currencies"><span>Currencies: </span>BRL</p>
+        </div>
+    </main>
+  </body>
 </html>
