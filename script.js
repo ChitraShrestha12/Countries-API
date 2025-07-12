@@ -25,7 +25,8 @@ fetch(
 function displayCountries(countries) {
   countryCountainer.innerHTML = "";
   countries.forEach((country) => {
-    const countryCard = document.createElement("div");
+    const countryCard = document.createElement("a");
+    countryCard.href = `http://127.0.0.1:5500/country.html?name=${country.name.common}`
     countryCard.classList.add("country-card");
     countryCard.innerHTML = `
         <img src="${country.flags.svg}" alt="${country.name.common} Flag" />

@@ -142,6 +142,10 @@ main .search-filter-container {
   font-size: 30px;
 }
 
+a{
+  text-decoration: none;
+}
+
 .country-detail p {
   margin-block: 4px;
   font-size: 18px;
